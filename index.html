@@ -3,16 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InfoCode - Todo sobre Programación</title>
+  <title>DevInsights - Guía Completa de Programación</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <nav>
-      <div class="logo">
-        InfoCode <span class="logo-tag">InfoCode</span>
-      </div>
+      <div class="logo">InfoCode</div>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="nosotros.html">Sobre Nosotros</a></li>
@@ -23,74 +21,309 @@
 
   <main>
     <section class="hero">
-      <h1>Guía Completa sobre Desarrollo de Software</h1>
-      <p>Aprende qué es la programación, los lenguajes más populares del mercado y cómo se estructuran las aplicaciones modernas.</p>
+      <h1>Guía Fundamental de Programación y Desarrollo Web</h1>
+      <p>Todo lo que necesitas saber para iniciar tu carrera en tecnología, desde conceptos clave hasta recursos recomendados.</p>
     </section>
 
-    <div class="post-list">
+    <!-- ARTÍCULO 1 CON MODALES INTERACTIVOS -->
+
+    <article class="article-section">
+      <h2>¿Qué es la programación?</h2>
       
-      <article class="blog-post">
-        <div class="post-text">
-          <div>
-            <div class="post-meta">
-              <span class="badge">Lenguajes</span>
-              <span>•</span>
-              <span>Lectura: 6 min</span>
-            </div>
-            <h2>Principales Lenguajes de Programación y sus Usos</h2>
-            <p>Un lenguaje de programación es un conjunto de instrucciones que nos permite comunicarnos con las computadoras. Cada uno tiene sus propios casos de uso principales:</p>
-            <ul style="margin-left: 1.2rem; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem;">
-              <li><strong>JavaScript:</strong> El estándar para el desarrollo web en el navegador y servidores (Node.js).</li>
-              <li><strong>Python:</strong> Líder en Inteligencia Artificial, Ciencia de Datos, automatización y backend con Django/FastAPI.</li>
-              <li><strong>Java:</strong> Ampliamente usado en aplicaciones empresariales robustas y desarrollo Android.</li>
-              <li><strong>C++ / C#:</strong> Fundamentales para desarrollo de videojuegos, sistemas operativos y software de alto rendimiento.</li>
-            </ul>
-          </div>
-          <div class="author-info">
-            <img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="Foto de Jessica Arroyo">
-            <span>Por Jessica Arroyo</span>
+      <div class="article-grid">
+        <div class="article-text">
+          <p>La <strong>programación</strong> es el proceso de crear un conjunto de instrucciones codificadas para indicarle a una computadora cómo realizar una tarea específica o resolver un problema.</p>
+          
+          <p style="margin-top: 1rem; font-weight: 600;">Explora más sobre este tema:</p>
+          
+          <div class="modal-buttons-group">
+            <button class="btn-modal" onclick="openModal('modal-servir')"> ¿Para qué sirve?</button>
+            <button class="btn-modal" onclick="openModal('modal-utiliza')"> ¿Dónde se utiliza?</button>
+            <button class="btn-modal" onclick="openModal('modal-ejemplos')"> Ejemplos de la vida diaria</button>
           </div>
         </div>
-        <div class="post-img">
-          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=700&q=80" alt="Código de programación en pantalla">
-        </div>
-      </article>
 
-      <article class="blog-post reverse">
-        <div class="post-text">
-          <div>
-            <div class="post-meta">
-              <span class="badge">Arquitectura Web</span>
-              <span>•</span>
-              <span>Lectura: 5 min</span>
-            </div>
-            <h2>¿Cuál es la diferencia entre Frontend, Backend y Full Stack?</h2>
-            <p>Para construir una aplicación o sitio web profesional se requieren dos capas principales de desarrollo:</p>
-            <ul style="margin-left: 1.2rem; margin-bottom: 1rem; color: var(--text-muted); font-size: 0.9rem;">
-              <li><strong>Frontend:</strong> Es todo lo que el usuario ve e interactúa en pantalla. Se construye con <strong>HTML</strong> (estructura), <strong>CSS</strong> (estilos) y <strong>JavaScript</strong> (interactividad).</li>
-              <li><strong>Backend:</strong> Es la lógica detrás de escena: servidores, manejo de bases de datos (MySQL, MongoDB) y autenticación de usuarios.</li>
-              <li><strong>Full Stack:</strong> Desarrolladorx que domina tanto el Frontend como el Backend para crear proyectos completos.</li>
-            </ul>
-          </div>
-          <div class="author-info">
-            <img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Foto de Equipo Dev">
-            <span>Por Equipo DevInsights</span>
-          </div>
+        <div class="article-media">
+          <img class="article-img-side" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80" alt="Persona programando en laptop">
         </div>
-        <div class="post-img">
-          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80" alt="Arquitectura de desarrollo web">
-        </div>
-      </article>
+      </div>
+    </article>
 
-    </div>
+    <!-- ARTÍCULO 2 -->
+     
+    <article class="article-section">
+      <h2> Lenguajes de programación más utilizados</h2>
+      <p>Existe una gran diversidad de lenguajes, cada uno adaptado a necesidades específicas:</p>
+      <div class="grid-cards">
+        <div class="card">
+          <h3>Java</h3>
+          <ul>
+            <li>Orientado a objetos.</li>
+            <li>Muy usado en aplicaciones empresariales.</li>
+            <li>Desarrollo nativo Android.</li>
+            <li>Robusto en Backend.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Python</h3>
+          <ul>
+            <li>Fácil de aprender y leer.</li>
+            <li>Inteligencia Artificial.</li>
+            <li>Ciencia de Datos y Analytics.</li>
+            <li>Automatización de tareas.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <ul>
+            <li>Lenguaje estándar del desarrollo web.</li>
+            <li>Frontend en navegadores.</li>
+            <li>Backend con Node.js.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>C#</h3>
+          <ul>
+            <li>Desarrollo de videojuegos.</li>
+            <li>Integración nativa con Unity.</li>
+            <li>Aplicaciones de escritorio para Windows.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- ARTÍCULO 3 -->
+    <article class="article-section">
+      <h2>🌐 Artículo 3: Desarrollo Frontend vs Backend</h2>
+      <p>El desarrollo web moderno se divide en dos áreas principales de especialización:</p>
+      <div class="grid-cards">
+        <div class="card">
+          <h3>Frontend</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Es la interfaz gráfica y la parte visual con la que interactúa el usuario.</p>
+          <strong style="font-size: 0.85rem;">Tecnologías clave:</strong>
+          <ul>
+            <li>HTML (Estructura)</li>
+            <li>CSS (Estilos)</li>
+            <li>JavaScript (Dinamismo)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Backend</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Es la lógica detrás de escena, procesamiento de servidores y bases de datos.</p>
+          <strong style="font-size: 0.85rem;">Tecnologías clave:</strong>
+          <ul>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+      </div>
+      <img class="article-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Arquitectura Cliente Servidor e infraestructura">
+    </article>
+
+    <!-- ARTÍCULO 4 -->
+    <article class="article-section">
+      <h2>🛠 Artículo 4: Herramientas que usa un desarrollador</h2>
+      <div class="tools-list">
+        <div class="tool-item">
+          <span class="tool-icon">📝</span>
+          <div>
+            <strong>Visual Studio Code:</strong> El editor de código más popular, ligero y extensible.
+          </div>
+        </div>
+        <div class="tool-item">
+          <span class="tool-icon">🌿</span>
+          <div>
+            <strong>Git:</strong> Sistema de control de versiones para rastrear cambios en el código.
+          </div>
+        </div>
+        <div class="tool-item">
+          <span class="tool-icon">☁️</span>
+          <div>
+            <strong>GitHub:</strong> Plataforma en la nube para alojar y colaborar en repositorios de Git.
+          </div>
+        </div>
+        <div class="tool-item">
+          <span class="tool-icon">🛢️</span>
+          <div>
+            <strong>MySQL:</strong> Sistema de gestión de bases de datos relacionales estándar.
+          </div>
+        </div>
+        <div class="tool-item">
+          <span class="tool-icon">🐳</span>
+          <div>
+            <strong>Docker:</strong> Herramienta para crear contenedores y desplegar aplicaciones uniformes.
+          </div>
+        </div>
+        <div class="tool-item">
+          <span class="tool-icon">📬</span>
+          <div>
+            <strong>Postman:</strong> Aplicación para probar, diseñar y documentar APIs REST.
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ARTÍCULO 5 -->
+    <article class="article-section">
+      <h2>🚀 Artículo 5: Ruta recomendada para aprender programación</h2>
+      <p>Sigue esta hoja de ruta estructurada paso a paso:</p>
+      <div class="timeline">
+        <div class="timeline-step">
+          <h4>1. Lógica de programación</h4>
+        </div>
+        <div class="timeline-step">
+          <h4>2. HTML (Estructura Web)</h4>
+        </div>
+        <div class="timeline-step">
+          <h4>3. CSS (Estilos y Diseño Responsivo)</h4>
+        </div>
+        <div class="timeline-step">
+          <h4>4. JavaScript (Fundamentos e Interactividad)</h4>
+        </div>
+        <div class="timeline-step">
+          <h4>5. Git y GitHub (Control de versiones)</h4>
+        </div>
+        <div class="timeline-step">
+          <h4>6. Bases de datos (SQL y NoSQL)</h4>
+        </div>
+        <div class="timeline-step">
+          <h4>7. Backend (Node.js, Python o Java)</h4>
+        </div>
+        <div class="timeline-step">
+          <h4>8. Frameworks (React, Angular, Vue, Express)</h4>
+        </div>
+        <div class="timeline-step">
+          <h4>9. Proyectos prácticos reales</h4>
+        </div>
+        <div class="timeline-step">
+          <h4>10. Creación de Portafolio profesional</h4>
+        </div>
+      </div>
+    </article>
+
+    <!-- ARTÍCULO 6 -->
+    <article class="article-section">
+      <h2>💡 Artículo 6: Consejos para aprender programación</h2>
+      <ul class="tips-list">
+        <li>✅ Practica todos los días escribiendo código real.</li>
+        <li>📖 Lee documentación oficial en lugar de solo ver videos.</li>
+        <li>🛠 Haz proyectos propios que resuelvan un problema personal.</li>
+        <li>🧠 No memorices sintaxis; comprende los conceptos clave.</li>
+        <li>🔍 Aprende a buscar información eficazmente en Google y Stack Overflow.</li>
+        <li>🐙 Usa Git desde el principio en todos tus proyectos.</li>
+      </ul>
+    </article>
+
+    <!-- ARTÍCULO 7 -->
+    <article class="article-section">
+      <h2>🔥 Artículo 7: Tendencias del desarrollo de software</h2>
+      <div class="grid-cards">
+        <div class="card">
+          <h3>Inteligencia Artificial</h3>
+          <p>Integración de modelos LLM y agentes autónomos en aplicaciones diarias.</p>
+        </div>
+        <div class="card">
+          <h3>Computación en la nube</h3>
+          <p>Servicios como AWS, Azure y Google Cloud para escalabilidad global.</p>
+        </div>
+        <div class="card">
+          <h3>Desarrollo móvil</h3>
+          <p>Aplicaciones multiplataforma con Flutter y React Native.</p>
+        </div>
+        <div class="card">
+          <h3>Ciberseguridad</h3>
+          <p>Protección de datos y autenticación segura frente a amenazas modernas.</p>
+        </div>
+        <div class="card">
+          <h3>DevOps</h3>
+          <p>Automatización del ciclo de vida del software con CI/CD.</p>
+        </div>
+        <div class="card">
+          <h3>Machine Learning</h3>
+          <p>Sistemas predictivos y procesamiento de lenguaje natural.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- RECURSOS RECOMENDADOS -->
+    <article class="article-section">
+      <h2>📚 Recursos recomendados</h2>
+      <p>Plataformas esenciales para aprender, investigar y consultar dudas:</p>
+      <div class="grid-cards">
+        <div class="card">
+          <h3>W3Schools</h3>
+          <p>Tutoriales interactivos y sencillos para principiantes en tecnologías web.</p>
+          <a href="https://www.w3schools.com" target="_blank">Visitar sitio →</a>
+        </div>
+        <div class="card">
+          <h3>MDN Web Docs</h3>
+          <p>La documentación oficial y definitiva para HTML, CSS y JavaScript.</p>
+          <a href="https://developer.mozilla.org" target="_blank">Visitar sitio →</a>
+        </div>
+        <div class="card">
+          <h3>freeCodeCamp</h3>
+          <p>Plataforma gratuita e interactiva con proyectos y certificaciones.</p>
+          <a href="https://www.freecodecamp.org" target="_blank">Visitar sitio →</a>
+        </div>
+        <div class="card">
+          <h3>GitHub</h3>
+          <p>Aprende leyendo código de otros desarrolladores y comparte tus proyectos.</p>
+          <a href="https://github.com" target="_blank">Visitar sitio →</a>
+        </div>
+        <div class="card">
+          <h3>Stack Overflow</h3>
+          <p>Comunidad global de preguntas y respuestas sobre errores de código.</p>
+          <a href="https://stackoverflow.com" target="_blank">Visitar sitio →</a>
+        </div>
+      </div>
+    </article>
+
   </main>
 
-  <footer>
-    <div class="footer-container">
-      <p><strong>Proyecto:</strong> The Blog Site (DevInsights)</p>
-      <p><strong>Autores:</strong> Jessica Angeles Reséndiz Arroyo & Equipo de Desarrollo</p>
-      <p><strong>Contacto:</strong> contacto.falso@ejemplo.com</p>
+  <!-- ESTRUCTURA DE LOS MODALES -->
+  
+  <!-- Modal 1: Para qué sirve -->
+  <div id="modal-servir" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-servir')">&times;</span>
+      <h3>💡 ¿Para qué sirve la programación?</h3>
+      <p>Sirve para automatizar procesos, crear software, construir aplicaciones web o móviles, procesar grandes volúmenes de datos y controlar dispositivos o hardware de forma precisa.</p>
     </div>
+  </div>
+
+  <!-- Modal 2: Dónde se utiliza -->
+  <div id="modal-utiliza" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-utiliza')">&times;</span>
+      <h3>🌐 ¿Dónde se utiliza?</h3>
+      <p>Se utiliza en prácticamente cualquier industria actual: banca y finanzas, salud, transporte, entretenimiento, comercio electrónico, educación, aeroespacial y ciencia avanzada.</p>
+    </div>
+  </div>
+
+  <!-- Modal 3: Ejemplos de la vida diaria -->
+  <div id="modal-ejemplos" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-ejemplos')">&times;</span>
+      <h3>📱 Ejemplos de la vida diaria</h3>
+      <ul style="padding-left: 1.2rem; color: var(--text-muted);">
+        <li>El algoritmo de recomendación de Netflix, YouTube o Spotify.</li>
+        <li>El sistema de frenos ABS y control digital de un automóvil moderno.</li>
+        <li>Los procesos de cobro, autenticación y transferencia en bancas móviles.</li>
+        <li>El funcionamiento programado de electrodomésticos como microondas o lavadoras.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+  <footer>
+    <p><strong>Proyecto:</strong> Blog de Programación </p>
+    <p><strong>Autores:</strong> Jessica Angeles Resendiz Arroyo </p>
+    <p><strong>Contacto:</strong></p>
   </footer>
 
 </body>
