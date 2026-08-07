@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevInsights - Contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        DevInsights <span class="logo-tag">DEV</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content-box">
+      <h1>Contacto y Preguntas</h1>
+      <p>¿Tienes dudas sobre qué lenguaje de programación aprender primero o quieres sugerir un tema para nuestro próximo artículo? Envíanos un mensaje.</p>
+
+      <form class="contact-form" action="#" onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" placeholder="Ej. Carlos Mendoza" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" placeholder="ejemplo@dominio.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Tema de Interés</label>
+          <input type="text" id="asunto" placeholder="Ej. ¿Qué lenguaje aprender para Backend?" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Consulta</label>
+          <textarea id="mensaje" rows="5" placeholder="Escribe tus dudas o comentarios aquí..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Enviar Consulta</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p><strong>Proyecto:</strong> The Blog Site (DevInsights)</p>
+      <p><strong>Autores:</strong> Jessica Angeles Reséndiz Arroyo & Equipo de Desarrollo</p>
+      <p><strong>Contacto:</strong> contacto.falso@ejemplo.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>
