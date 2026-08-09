@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> ArroyoCode - Guía Completa de Programación y Desarrollo Web </title>
+  <title>ArroyoCode - Guía Completa de Programación y Desarrollo Web</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- HEADER / NAVEGACIÓN PRINCIPAL -->
+
   <header>
     <nav>
       <div class="logo">
@@ -25,27 +25,30 @@
   </header>
 
   <!-- CONTENIDO PRINCIPAL -->
+
   <main>
     <section class="hero">
-      <span class="badge-hero"> Portal Educativo </span>
+      <span class="badge-hero">Portal Educativo</span>
       <h1>Blog de Programación y Desarrollo de Software</h1>
       <p>Aprende desde los fundamentos conceptuales de la programación hasta las arquitecturas web avanzadas, lenguajes con mayor demanda laboral y herramientas profesionales del ecosistema tech.</p>
     </section>
 
     <!-- ARTÍCULO 1: ¿QUÉ ES LA PROGRAMACIÓN? -->
+
     <article class="article-section">
-      <h2> ¿Qué es la programación? </h2>
+      <h2>¿Qué es la programación?</h2>
       
       <div class="article-grid">
         <div class="article-text">
-          <p>La <strong>programación</strong> es el proceso sistemático de diseñar, codificar, depurar y mantener el código fuente de un programa informático. Consiste en traducir la resolución de problemas lógicos a instrucciones comprensibles para un sistema informático utilizando un lenguaje especializado.</p>
+          <p>La <strong>programación</strong> es el proceso sistemático de diseñar, codificar, depurar y mantener el código 
+             fuente de un programa informático. Consiste en traducir la resolución de problemas lógicos a instrucciones comprensibles para un sistema informático utilizando un lenguaje especializado.</p>
           
           <p class="subtitle-box">Explora los detalles clave de esta disciplina:</p>
           
           <div class="modal-buttons-group">
-            <button class="btn-modal" onclick="openModal('modal-servir')"> ¿Para qué sirve la programación?</button>
-            <button class="btn-modal" onclick="openModal('modal-utiliza')"> ¿Dónde se aplica en la industria?</button>
-            <button class="btn-modal" onclick="openModal('modal-ejemplos')"> Ejemplos de la vida cotidiana</button>
+            <button class="btn-modal" onclick="openModal('modal-servir')">¿Para qué sirve la programación?</button>
+            <button class="btn-modal" onclick="openModal('modal-utiliza')">¿Dónde se aplica en la industria?</button>
+            <button class="btn-modal" onclick="openModal('modal-ejemplos')">Ejemplos de la vida cotidiana</button>
           </div>
         </div>
 
@@ -56,13 +59,15 @@
     </article>
 
     <!-- ARTÍCULO 2: CLASIFICACIÓN Y TIPOS DE LENGUAJES DE PROGRAMACIÓN -->
+
     <article class="article-section">
-      <h2> Tipos y Clasificación de Lenguajes de Programación</h2>
+      <h2>Clasificación y Tipos de Lenguajes de Programación</h2>
       <p>Los lenguajes de programación se categorizan según su nivel de abstracción con el hardware, el paradigma de desarrollo, su modo de ejecución y la forma en que gestionan las variables y los tipos de datos. Haz clic en el botón de cada tarjeta para voltearla:</p>
       
       <div class="grid-cards two-columns">
 
         <!-- Tarjeta 1: Por Nivel de Abstracción -->
+
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front card highlight-card">
@@ -71,7 +76,7 @@
                 <span class="tech-tag">Hardware</span>
               </div>
               <img src="Pic/Abstracción.jpg" alt="Hardware y Microchip" class="card-flip-img">
-              <button class="btn-flip" onclick="toggleFlip(this)"> Voltear tarjeta </button>
+              <button class="btn-flip" onclick="toggleFlip(this)">Voltear tarjeta</button>
             </div>
             <div class="flip-card-back card highlight-card">
               <div class="card-header">
@@ -84,12 +89,13 @@
                 <li><strong>Nivel Medio (Ensamblador / C):</strong> Manipulación directa de memoria.</li>
                 <li><strong>Alto Nivel (Python, Java, JS):</strong> Sintaxis cercana al lenguaje humano.</li>
               </ul>
-              <button class="btn-flip back-btn" onclick="toggleFlip(this)"> Volver </button>
+              <button class="btn-flip back-btn" onclick="toggleFlip(this)">Volver</button>
             </div>
           </div>
         </div>
 
         <!-- Tarjeta 2: Por Paradigma de Programación -->
+
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front card highlight-card">
@@ -98,7 +104,7 @@
                 <span class="tech-tag">Estilo de Código</span>
               </div>
               <img src="Pic/Paradigma.jpg" alt="Estructura de código" class="card-flip-img">
-              <button class="btn-flip" onclick="toggleFlip(this)"> Voltear tarjeta </button>
+              <button class="btn-flip" onclick="toggleFlip(this)">Voltear tarjeta</button>
             </div>
             <div class="flip-card-back card highlight-card">
               <div class="card-header">
@@ -112,7 +118,7 @@
                 <li><strong>Funcional (Haskell, Erlang):</strong> Evaluación de funciones matemáticas.</li>
                 <li><strong>Declarativo (SQL, HTML):</strong> Describe el resultado deseado.</li>
               </ul>
-              <button class="btn-flip back-btn" onclick="toggleFlip(this)"> Volver </button>
+              <button class="btn-flip back-btn" onclick="toggleFlip(this)">Volver</button>
             </div>
           </div>
         </div>
@@ -127,7 +133,7 @@
                 <span class="tech-tag">Procesamiento</span>
               </div>
               <img src="Pic/MétodoEjecución.jpg" alt="Compilación y procesamiento" class="card-flip-img">
-              <button class="btn-flip" onclick="toggleFlip(this)"> Voltear tarjeta </button>
+              <button class="btn-flip" onclick="toggleFlip(this)">Voltear tarjeta</button>
             </div>
             <div class="flip-card-back card highlight-card">
               <div class="card-header">
@@ -140,12 +146,13 @@
                 <li><strong>Interpretados (Python, JS):</strong> Ejecuta línea por línea en tiempo real.</li>
                 <li><strong>Híbridos / JIT (Java, C#):</strong> Compila a Bytecode intermedio.</li>
               </ul>
-              <button class="btn-flip back-btn" onclick="toggleFlip(this)"> Volver </button>
+              <button class="btn-flip back-btn" onclick="toggleFlip(this)">Volver</button>
             </div>
           </div>
         </div>
 
         <!-- Tarjeta 4: Por Sistema de Tipado -->
+
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front card highlight-card">
@@ -154,7 +161,7 @@
                 <span class="tech-tag">Gestión de Datos</span>
               </div>
               <img src="Pic/SistemaTipado.jpg" alt="Variables y tipos de datos" class="card-flip-img">
-              <button class="btn-flip" onclick="toggleFlip(this)"> Voltear tarjeta </button>
+              <button class="btn-flip" onclick="toggleFlip(this)">Voltear tarjeta</button>
             </div>
             <div class="flip-card-back card highlight-card">
               <div class="card-header">
@@ -167,7 +174,7 @@
                 <li><strong>Dinámicos (Python, JavaScript):</strong> Adapta tipos en ejecución.</li>
                 <li><strong>Fuerte / Débil:</strong> Define la tolerancia a conversiones implícitas.</li>
               </ul>
-              <button class="btn-flip back-btn" onclick="toggleFlip(this)"> Volver </button>
+              <button class="btn-flip back-btn" onclick="toggleFlip(this)">Volver</button>
             </div>
           </div>
         </div>
@@ -175,14 +182,15 @@
       </div>
     </article>
 
-    <!-- ARTÍCULO 3: LENGUAJES POPULARES -->
+    <!-- ARTÍCULO 3: LENGUAJES DE PRROGRAMACIÓN MÁS DEMANDADOS -->
+
     <article class="article-section">
-      <h2> Lenguajes de programación más demandados </h2>
-      <p>Existe una amplia diversidad de lenguajes de programación. Cada uno posee características, 
-         sintaxis y casos de uso diseñados para optimizar diferentes tipos de proyectos:</p>
-      
+      <h2>Lenguajes de programación más demandados</h2>
+      <p>Existe una amplia diversidad de lenguajes de programación. Cada uno posee características, sintaxis y casos de uso diseñados para optimizar diferentes tipos de proyectos:</p>
       <div class="grid-cards">
+
         <!-- Java -->
+
         <div class="card lang-card java">
           <div class="card-header">
             <div class="card-title-group">
@@ -200,6 +208,7 @@
         </div>
 
         <!-- Python -->
+
         <div class="card lang-card python">
           <div class="card-header">
             <div class="card-title-group">
@@ -217,6 +226,7 @@
         </div>
 
         <!-- JavaScript -->
+
         <div class="card lang-card js">
           <div class="card-header">
             <div class="card-title-group">
@@ -234,6 +244,7 @@
         </div>
 
         <!-- TypeScript -->
+
         <div class="card lang-card typescript">
           <div class="card-header">
             <div class="card-title-group">
@@ -251,6 +262,7 @@
         </div>
 
         <!-- C# -->
+
         <div class="card lang-card csharp">
           <div class="card-header">
             <div class="card-title-group">
@@ -267,6 +279,7 @@
         </div>
 
         <!-- Go -->
+
         <div class="card lang-card go">
           <div class="card-header">
             <div class="card-title-group">
@@ -284,9 +297,10 @@
       </div>
     </article>
 
-    <!-- ARTÍCULO 4: FRONTEND VS BACKEND VS FULL STACK -->
+    <!-- ARTÍCULO 4: FRONTEND, BACKEND Y FULL STACK -->
+    
     <article class="article-section">
-      <h2> Arquitectura Web: Frontend, Backend y Full Stack </h2>
+      <h2>Arquitectura Web: Frontend, Backend y Full Stack</h2>
       <p>El desarrollo de sistemas web modernos se segmenta en capas especializadas para garantizar un código modular, escalable y mantenible:</p>
       
       <div class="grid-cards three-columns">
@@ -330,116 +344,238 @@
       <img class="article-img" src="Pic/ArquitecturaWeb.jpg" alt="Arquitectura de servidor e infraestructura tecnológica">
     </article>
 
-    <!-- ARTÍCULO 5: HERRAMIENTAS PROFESIONALES -->
-    <article class="article-section">
-      <h2>🛠️ 5. Herramientas indispensables para un desarrollador</h2>
-      <p>El flujo de trabajo profesional requiere herramientas optimizadas para la creación, versión y despliegue de software:</p>
+    <!-- ARTÍCULO 5: HERRAMIENTAS INDISPENSABLES PARA UN DESARROLLADOR -->
+<article class="article-section tools-section">
+  <div class="banner-header">
+    <h2>Herramientas indispensables para un desarrollador</h2>
+  </div>
 
-      <div class="tools-list">
-        <div class="tool-item">
-          <span class="tool-icon">📝</span>
-          <div>
-            <strong>Visual Studio Code:</strong> Editor de código ligero, altamente personalizable con extensiones.
-          </div>
-        </div>
-        <div class="tool-item">
-          <span class="tool-icon">🌿</span>
-          <div>
-            <strong>Git:</strong> Control de versiones distribuido para rastrear cambios en el código.
-          </div>
-        </div>
-        <div class="tool-item">
-          <span class="tool-icon">☁️</span>
-          <div>
-            <strong>GitHub:</strong> Alojamiento en la nube de repositorios y trabajo colaborativo.
-          </div>
-        </div>
-        <div class="tool-item">
-          <span class="tool-icon">🛢️</span>
-          <div>
-            <strong>MySQL / PostgreSQL:</strong> Bases de datos relacionales para almacenamiento seguro.
-          </div>
-        </div>
-        <div class="tool-item">
-          <span class="tool-icon">🐳</span>
-          <div>
-            <strong>Docker:</strong> Contenerización de aplicaciones con sus dependencias.
-          </div>
-        </div>
-        <div class="tool-item">
-          <span class="tool-icon">📬</span>
-          <div>
-            <strong>Postman:</strong> Plataforma para diseñar, probar y documentar APIs REST.
-          </div>
-        </div>
+  <p class="section-text">
+    El flujo de trabajo profesional requiere herramientas optimizadas para la creación, versión y despliegue de software:
+  </p>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div class="card-item">
+        <p><strong>Postman:</strong> Plataforma para diseñar, probar y documentar APIs REST.</p>
       </div>
-    </article>
-
-    <!-- ARTÍCULO 6: RUTA DE APRENDIZAJE -->
-    <article class="article-section">
-      <h2>🚀 6. Hoja de ruta sugerida para aprender a programar</h2>
-      <p>Aprender desarrollo de software requiere un proceso escalonado. Sigue este trayecto estructurado:</p>
-      
-      <div class="timeline">
-        <div class="timeline-step">
-          <h4>1. Fundamentos y Lógica de Programación</h4>
-          <p>Variables, condicionales, bucles, algoritmos y resolución de problemas.</p>
-        </div>
-        <div class="timeline-step">
-          <h4>2. Maquetación Web Semántica (HTML5)</h4>
-          <p>Estructura clara de documentos web y accesibilidad.</p>
-        </div>
-        <div class="timeline-step">
-          <h4>3. Estilos y Responsive Design (CSS3)</h4>
-          <p>Flexbox, CSS Grid, diseño adaptativo a móviles y librerías.</p>
-        </div>
-        <div class="timeline-step">
-          <h4>4. Dinamismo e Interactividad (JavaScript)</h4>
-          <p>Manipulación del DOM, eventos, consumo de APIs y asincronía.</p>
-        </div>
-        <div class="timeline-step">
-          <h4>5. Control de Versiones (Git & GitHub)</h4>
-          <p>Ramas, commits, pull requests y flujo colaborativo.</p>
-        </div>
-        <div class="timeline-step">
-          <h4>6. Bases de Datos (SQL / NoSQL)</h4>
-          <p>Esquemas relacionales, consultas en MySQL o MongoDB.</p>
-        </div>
-        <div class="timeline-step">
-          <h4>7. Desarrollo de Servidores (Backend)</h4>
-          <p>APIs REST con Java, Python o Node.js.</p>
-        </div>
-        <div class="timeline-step">
-          <h4>8. Frameworks Modernos de Frontend</h4>
-          <p>Desarrollo de SPAs con React, Angular o Vue.js.</p>
-        </div>
-        <div class="timeline-step">
-          <h4>9. Proyectos Integradores Prácticos</h4>
-          <p>Construcción de aplicaciones aplicando arquitectura limpia.</p>
-        </div>
-        <div class="timeline-step">
-          <h4>10. Despliegue y Portafolio Profesional</h4>
-          <p>Publicación en Vercel/AWS y presencia activa en LinkedIn.</p>
-        </div>
+      <div class="card-item">
+        <p><strong>Visual Studio Code:</strong> Editor de código ligero, altamente personalizable con extensiones.</p>
       </div>
-    </article>
+      <div class="card-item">
+        <p><strong>Git:</strong> Control de versiones distribuido para rastrear cambios en el código.</p>
+      </div>
+      <div class="card-item">
+        <p><strong>GitHub:</strong> Alojamiento en la nube de repositorios y trabajo colaborativo.</p>
+      </div>
+      <div class="card-item">
+        <p><strong>MySQL / PostgreSQL:</strong> Bases de datos relacionales para almacenamiento seguro.</p>
+      </div>
+      <div class="card-item">
+        <p><strong>Docker:</strong> Contenerización de aplicaciones con sus dependencias.</p>
+      </div>
 
-    <!-- ARTÍCULO 7: CONSEJOS PROFESIONALES -->
-    <article class="article-section">
-      <h2>💡 7. Buenas prácticas para estudiantes de tecnología</h2>
-      <ul class="tips-list">
-        <li>✅ <strong>Practica constantemente:</strong> Escribe código a diario para afianzar la lógica.</li>
-        <li>📖 <strong>Consulta documentación oficial:</strong> Lee fuentes formales para profundizar.</li>
-        <li>🛠️ <strong>Construye proyectos reales:</strong> Aplica conceptos solucionando problemas concretos.</li>
-        <li>🧠 <strong>Enfócate en la lógica:</strong> Comprende la arquitectura antes de memorizar sintaxis.</li>
-        <li>🔍 <strong>Aprende a depurar:</strong> Interpreta errores e investiga soluciones eficientemente.</li>
-        <li>🐙 <strong>Usa Git desde el inicio:</strong> Guarda el historial de desarrollo de tus proyectos.</li>
-      </ul>
-    </article>
+      <!-- Duplicados para bucle infinito -->
+      <div class="card-item">
+        <p><strong>Postman:</strong> Plataforma para diseñar, probar y documentar APIs REST.</p>
+      </div>
+      <div class="card-item">
+        <p><strong>Visual Studio Code:</strong> Editor de código ligero, highly personalizable con extensiones.</p>
+      </div>
+      <div class="card-item">
+        <p><strong>Git:</strong> Control de versiones distribuido para rastrear cambios en el código.</p>
+      </div>
+      <div class="card-item">
+        <p><strong>GitHub:</strong> Alojamiento en la nube de repositorios y trabajo colaborativo.</p>
+      </div>
+      <div class="card-item">
+        <p><strong>MySQL / PostgreSQL:</strong> Bases de datos relacionales para almacenamiento seguro.</p>
+      </div>
+      <div class="card-item">
+        <p><strong>Docker:</strong> Contenerización de aplicaciones con sus dependencias.</p>
+      </div>
+    </div>
+  </div>
 
-    <!-- ARTÍCULO 8: TENDENCIAS -->
+  <div class="hint-wrapper">
+    <p class="hint-text"> Nota. Pasa el cursor sobre el banner para pausar el movimiento y leer detenidamente 
+                          cada herramienta.</p>
+  </div>
+</article>
+
+    <!-- ARTÍCULO 6: HOJA DE RUTA SUGERIDA PARA APRENDER A PROGRAMAR -->
+
+<article class="article-section">
+  <h2 class="title-blue"> Hoja de ruta sugerida para aprender a programar </h2>
+  <p>Aprender desarrollo de software requiere un proceso escalonado. Haz clic en cualquier imagen o tarjeta 
+     para desplegar su detalle:</p>
+  
+  <div class="roadmap-grid">
+    
+    <details class="roadmap-card" name="roadmap">
+      <summary class="roadmap-summary">
+        <img src="Pic/FundamentosProgramación.jpg" alt="Fundamentos de programación" class="roadmap-img">
+        <div class="roadmap-header">
+          <span class="step-num">01</span>
+          <h4>Fundamentos y Lógica de Programación</h4>
+        </div>
+      </summary>
+      <div class="roadmap-body">
+        <p> Los fundamentos de programación son los conceptos básicos que necesitas para crear programas, mientras que la 
+            lógica de programación es la capacidad de pensar y organizar los pasos necesarios para resolver un problema 
+            mediante código. </p>
+      </div>
+    </details>
+
+    <details class="roadmap-card" name="roadmap">
+      <summary class="roadmap-summary">
+        <img src="Pic/MaquetaciónWebSemántica.jpg" alt="Maquetación HTML5" class="roadmap-img">
+        <div class="roadmap-header">
+          <span class="step-num">02</span>
+          <h4>Maquetación Web Semántica (HTML5)</h4>
+        </div>
+      </summary>
+      <div class="roadmap-body">
+        <p> Consiste en estructurar el contenido de una página usando etiquetas que describen su 
+            significado y función, en lugar de usar solo elementos genéricos como &lt;div&gt; o &lt;span&gt;.</p>
+      </div>
+    </details>
+
+    <details class="roadmap-card" name="roadmap">
+      <summary class="roadmap-summary">
+        <img src="Pic/EstilosyResponsiveDesignCSS3.jpg" alt="Estilos CSS3" class="roadmap-img">
+        <div class="roadmap-header">
+          <span class="step-num">03</span>
+          <h4>Estilos y Responsive Design (CSS3)</h4>
+        </div>
+      </summary>
+      <div class="roadmap-body">
+        <p> El diseño web responsivo es un enfoque que permite que las páginas web se adapten automáticamente 
+            a diferentes tamaños de pantalla y dispositivos, como teléfonos, tabletas y computadoras de escritorio. 
+            Esto se logra utilizando HTML y CSS, sin necesidad de JavaScript, para ajustar el diseño y la apariencia 
+            del contenido. </p>
+      </div>
+    </details>
+
+    <details class="roadmap-card" name="roadmap">
+      <summary class="roadmap-summary">
+        <img src="Pic/DinamismoInteractividad.jpg" alt="JavaScript" class="roadmap-img">
+        <div class="roadmap-header">
+          <span class="step-num">04</span>
+          <h4>Dinamismo e Interactividad (JavaScript)</h4>
+        </div>
+      </summary>
+      <div class="roadmap-body">
+        <p> JavaScript es un lenguaje de programación que permite a los desarrolladores crear contenido dinámico, 
+            controlar multimedia, animar imágenes y más. Además que se ejecuta en un navegador y puede modificar 
+            prácticamente todos los aspectos del comportamiento de la página web. Esto incluye modificar contenido 
+            del DOM, cambiar propiedades CSS y responder a eventos del usuario </p>
+      </div>
+    </details>
+
+    <details class="roadmap-card" name="roadmap">
+      <summary class="roadmap-summary">
+        <img src="Pic/ControlVersiones.jpg" alt="Git y GitHub" class="roadmap-img">
+        <div class="roadmap-header">
+          <span class="step-num">05</span>
+          <h4>Control de Versiones (Git &amp; GitHub)</h4>
+        </div>
+      </summary>
+      <div class="roadmap-body">
+        <p> El control de versiones es una práctica esencial en el desarrollo de software que permite rastrear 
+            y gestionar los cambios realizados en los archivos a lo largo del tiempo. Git, uno de los sistemas 
+            de control de versiones más populares, es una herramienta distribuida que facilita la colaboración 
+            entre desarrolladores y asegura la integridad del código.</p>
+      </div>
+    </details>
+
+    <details class="roadmap-card" name="roadmap">
+      <summary class="roadmap-summary">
+        <img src="Pic/BasesDatosSQLyNoSQL.jpeg" alt="Bases de Datos" class="roadmap-img">
+        <div class="roadmap-header">
+          <span class="step-num">06</span>
+          <h4>Bases de Datos (SQL / NoSQL)</h4>
+        </div>
+      </summary>
+      <div class="roadmap-body">
+        <p> Una base de datos SQL es un sistema diseñado para almacenar, gestionar y acceder a grandes cantidades 
+            de datos estructurados de manera eficiente. Estas bases de datos son relacionales, lo que significa que 
+            organizan los datos en tablas con filas y columnas, donde cada fila tiene una clave única que la identifica.
+
+            Una base de datos NoSQL (también conocida como "no solo SQL") es un tipo de sistema de gestión de bases de datos 
+            que permite almacenar y consultar datos de manera no relacional, es decir, sin la estructura tabular tradicional 
+            de las bases de datos SQL. En lugar de tablas con filas y columnas, las bases de datos NoSQL utilizan modelos de 
+            datos más flexibles como documentos, pares clave-valor, grafos o columnas anchas.
+          
+          </p>
+      </div>
+    </details>
+
+    <details class="roadmap-card" name="roadmap">
+      <summary class="roadmap-summary">
+        <img src="Pic/DesarrolloServidoresBackend.jpg" alt="Desarrollo Backend" class="roadmap-img">
+        <div class="roadmap-header">
+          <span class="step-num">07</span>
+          <h4>Desarrollo de Servidores (Backend)</h4>
+        </div>
+      </summary>
+      <div class="roadmap-body">
+        <p> El desarrollo de servidores, o backend, es la parte del desarrollo de software que se encarga de la lógica de 
+            servidor, bases de datos y la integración entre el servidor y los usuarios finales </p>
+      </div>
+    </details>
+
+    <details class="roadmap-card" name="roadmap">
+      <summary class="roadmap-summary">
+        <img src="Pic/FrameworksModernosFrontend.jpg" alt="Frameworks Frontend" class="roadmap-img">
+        <div class="roadmap-header">
+          <span class="step-num">08</span>
+          <h4> Frameworks Modernos de Frontend </h4>
+        </div>
+      </summary>
+      <div class="roadmap-body">
+        <p> Los frameworks modernos de frontend son herramientas que simplifican la creación de aplicaciones web modernas. 
+            En 2026, los frameworks más destacados incluyen React, Vue, Astro, Next.js y Svelte. Estos frameworks ofrecen 
+            diferentes enfoques, rendimientos y ecologías, y son ideales para proyectos de diversos tipos y requisitos técnicos.  </p>
+      </div>
+    </details>
+
+    <details class="roadmap-card" name="roadmap">
+      <summary class="roadmap-summary">
+        <img src="Pic/ProyectosIntegradoresPrácticos.jpg" alt="Proyectos Integradores" class="roadmap-img">
+        <div class="roadmap-header">
+          <span class="step-num">09</span>
+          <h4>Proyectos Integradores Prácticos</h4>
+        </div>
+      </summary>
+      <div class="roadmap-body">
+        <p> Construcción de aplicaciones aplicando arquitectura limpia. </p>
+      </div>
+    </details>
+
+    <details class="roadmap-card" name="roadmap">
+      <summary class="roadmap-summary">
+        <img src="Pic/DespliegueyPortafolioProfesional.jpg" alt="Despliegue y Portafolio" class="roadmap-img">
+        <div class="roadmap-header">
+          <span class="step-num">10</span>
+          <h4>Despliegue y Portafolio Profesional</h4>
+        </div>
+      </summary>
+      <div class="roadmap-body">
+        <p> Un portafolio profesional es más que un currículum: evidencia concreta de tu trabajo y capacidades mediante proyectos, 
+            casos, logros y resultados medibles. Permite a empleadores, clientes o colaboradores evaluar tu experiencia, estilo de 
+            trabajo y nivel de especialización. Puede presentarse en formato físico, digital o híbrido, dependiendo del contexto y 
+            la audiencia. </p>
+      </div>
+    </details>
+
+  </div>
+</article>
+
+    <!-- ARTÍCULO 7: TENDENCIAS -->
+
     <article class="article-section">
-      <h2>🔥 8. Tendencias emergentes en la industria del software</h2>
+      <h2>🔥 Tendencias emergentes en la industria del software</h2>
       <div class="grid-cards">
         <div class="card">
           <h3>IA Generativa</h3>
@@ -469,6 +605,7 @@
     </article>
 
     <!-- RECURSOS RECOMENDADOS -->
+
     <article class="article-section">
       <h2>📚 Recursos recomendados para estudio</h2>
       <p>Plataformas de documentación y aprendizaje estructurado:</p>
@@ -504,6 +641,7 @@
   </main>
 
   <!-- MODALES INTERACTIVOS -->
+
   <div id="modal-servir" class="modal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal('modal-servir')">&times;</span>
@@ -534,6 +672,7 @@
   </div>
 
   <!-- FOOTER -->
+
   <footer>
     <div class="footer-container">
       <p><strong>Proyecto:</strong> InfoCode - Portal Educativo de Programación</p>
