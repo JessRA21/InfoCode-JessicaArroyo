@@ -23,3 +23,8 @@ window.onclick = function(event) {
     event.target.classList.remove('active');
   }
 };
+
+// Alterna el detalle de las tarjetas de la hoja de ruta al hacer clic
+function toggleRoadmapCard(card) {
+  card.classList.toggle('open');
+}

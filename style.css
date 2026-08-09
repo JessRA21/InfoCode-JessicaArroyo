@@ -1406,3 +1406,87 @@ footer {
     transform: translateX(-50%);
   }
 }
+
+/* ========================================================
+   ESTILOS DE LA HOJA DE RUTA (ARTÍCULO 6)
+   ======================================================== */
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.roadmap-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25 ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  border-color: #007bff;
+}
+
+.card-img-container {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.25rem;
+}
+
+.badge-num {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.65rem;
+  border-radius: 6px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.card-details {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+  display: none;
+  border-top: 1px dashed #e2e8f0;
+  margin-top: 0.25rem;
+  padding-top: 0.75rem;
+}
+
+.roadmap-card.open .card-details {
+  display: block;
+}

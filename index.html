@@ -405,172 +405,155 @@
 
     <!-- ARTÍCULO 6: HOJA DE RUTA SUGERIDA PARA APRENDER A PROGRAMAR -->
 
-<article class="article-section">
-  <h2 class="title-blue"> Hoja de ruta sugerida para aprender a programar </h2>
-  <p>Aprender desarrollo de software requiere un proceso escalonado. Haz clic en cualquier imagen o tarjeta 
-     para desplegar su detalle:</p>
-  
+<article class="article-section roadmap-section">
+  <h2>Hoja de ruta sugerida para aprender a programar</h2>
+  <p class="roadmap-desc">Aprender desarrollo de software requiere un proceso escalonado. Haz clic en cualquier imagen o tarjeta para desplegar su detalle:</p>
   <div class="roadmap-grid">
-    
-    <details class="roadmap-card" name="roadmap">
-      <summary class="roadmap-summary">
-        <img src="Pic/FundamentosProgramación.jpg" alt="Fundamentos de programación" class="roadmap-img">
-        <div class="roadmap-header">
-          <span class="step-num">01</span>
-          <h4>Fundamentos y Lógica de Programación</h4>
-        </div>
-      </summary>
-      <div class="roadmap-body">
-        <p> Los fundamentos de programación son los conceptos básicos que necesitas para crear programas, mientras que la 
-            lógica de programación es la capacidad de pensar y organizar los pasos necesarios para resolver un problema 
-            mediante código. </p>
+
+    <!-- Tarjeta 01 -->
+
+    <div class="roadmap-card" onclick="toggleRoadmapCard(this)">
+      <div class="card-img-container">
+        <img src="Pic/FundamentosProgramación.jpg" alt="Fundamentos y Lógica">
       </div>
-    </details>
-
-    <details class="roadmap-card" name="roadmap">
-      <summary class="roadmap-summary">
-        <img src="Pic/MaquetaciónWebSemántica.jpg" alt="Maquetación HTML5" class="roadmap-img">
-        <div class="roadmap-header">
-          <span class="step-num">02</span>
-          <h4>Maquetación Web Semántica (HTML5)</h4>
-        </div>
-      </summary>
-      <div class="roadmap-body">
-        <p> Consiste en estructurar el contenido de una página usando etiquetas que describen su 
-            significado y función, en lugar de usar solo elementos genéricos como &lt;div&gt; o &lt;span&gt;.</p>
+      <div class="card-body">
+        <span class="badge-num">01</span>
+        <h3 class="card-title">Fundamentos y Lógica de Programación</h3>
       </div>
-    </details>
-
-    <details class="roadmap-card" name="roadmap">
-      <summary class="roadmap-summary">
-        <img src="Pic/EstilosyResponsiveDesignCSS3.jpg" alt="Estilos CSS3" class="roadmap-img">
-        <div class="roadmap-header">
-          <span class="step-num">03</span>
-          <h4>Estilos y Responsive Design (CSS3)</h4>
-        </div>
-      </summary>
-      <div class="roadmap-body">
-        <p> El diseño web responsivo es un enfoque que permite que las páginas web se adapten automáticamente 
-            a diferentes tamaños de pantalla y dispositivos, como teléfonos, tabletas y computadoras de escritorio. 
-            Esto se logra utilizando HTML y CSS, sin necesidad de JavaScript, para ajustar el diseño y la apariencia 
-            del contenido. </p>
+      <div class="card-details">
+        <p>Aprende algoritmos, variables, condicionales, bucles y diagramas de flujo para desarrollar el pensamiento lógico antes de abordar frameworks complejos.</p>
       </div>
-    </details>
+    </div>
 
-    <details class="roadmap-card" name="roadmap">
-      <summary class="roadmap-summary">
-        <img src="Pic/DinamismoInteractividad.jpg" alt="JavaScript" class="roadmap-img">
-        <div class="roadmap-header">
-          <span class="step-num">04</span>
-          <h4>Dinamismo e Interactividad (JavaScript)</h4>
-        </div>
-      </summary>
-      <div class="roadmap-body">
-        <p> JavaScript es un lenguaje de programación que permite a los desarrolladores crear contenido dinámico, 
-            controlar multimedia, animar imágenes y más. Además que se ejecuta en un navegador y puede modificar 
-            prácticamente todos los aspectos del comportamiento de la página web. Esto incluye modificar contenido 
-            del DOM, cambiar propiedades CSS y responder a eventos del usuario </p>
+    <!-- Tarjeta 02 -->
+    <div class="roadmap-card" onclick="toggleRoadmapCard(this)">
+      <div class="card-img-container">
+        <img src="Pic/MaquetaciónWebSemántica.jpg" alt="Maquetación Web Semántica">
       </div>
-    </details>
-
-    <details class="roadmap-card" name="roadmap">
-      <summary class="roadmap-summary">
-        <img src="Pic/ControlVersiones.jpg" alt="Git y GitHub" class="roadmap-img">
-        <div class="roadmap-header">
-          <span class="step-num">05</span>
-          <h4>Control de Versiones (Git &amp; GitHub)</h4>
-        </div>
-      </summary>
-      <div class="roadmap-body">
-        <p> El control de versiones es una práctica esencial en el desarrollo de software que permite rastrear 
-            y gestionar los cambios realizados en los archivos a lo largo del tiempo. Git, uno de los sistemas 
-            de control de versiones más populares, es una herramienta distribuida que facilita la colaboración 
-            entre desarrolladores y asegura la integridad del código.</p>
+      <div class="card-body">
+        <span class="badge-num">02</span>
+        <h3 class="card-title">Maquetación Web Semántica (HTML5)</h3>
       </div>
-    </details>
-
-    <details class="roadmap-card" name="roadmap">
-      <summary class="roadmap-summary">
-        <img src="Pic/BasesDatosSQLyNoSQL.jpeg" alt="Bases de Datos" class="roadmap-img">
-        <div class="roadmap-header">
-          <span class="step-num">06</span>
-          <h4>Bases de Datos (SQL / NoSQL)</h4>
-        </div>
-      </summary>
-      <div class="roadmap-body">
-        <p> Una base de datos SQL es un sistema diseñado para almacenar, gestionar y acceder a grandes cantidades 
-            de datos estructurados de manera eficiente. Estas bases de datos son relacionales, lo que significa que 
-            organizan los datos en tablas con filas y columnas, donde cada fila tiene una clave única que la identifica.
-
-            Una base de datos NoSQL (también conocida como "no solo SQL") es un tipo de sistema de gestión de bases de datos 
-            que permite almacenar y consultar datos de manera no relacional, es decir, sin la estructura tabular tradicional 
-            de las bases de datos SQL. En lugar de tablas con filas y columnas, las bases de datos NoSQL utilizan modelos de 
-            datos más flexibles como documentos, pares clave-valor, grafos o columnas anchas.
-          
-          </p>
+      <div class="card-details">
+        <p>Estructura documentos web de forma accesible y estándar utilizando las etiquetas semánticas de HTML5 para optimizar el SEO y la legibilidad.</p>
       </div>
-    </details>
+    </div>
 
-    <details class="roadmap-card" name="roadmap">
-      <summary class="roadmap-summary">
-        <img src="Pic/DesarrolloServidoresBackend.jpg" alt="Desarrollo Backend" class="roadmap-img">
-        <div class="roadmap-header">
-          <span class="step-num">07</span>
-          <h4>Desarrollo de Servidores (Backend)</h4>
-        </div>
-      </summary>
-      <div class="roadmap-body">
-        <p> El desarrollo de servidores, o backend, es la parte del desarrollo de software que se encarga de la lógica de 
-            servidor, bases de datos y la integración entre el servidor y los usuarios finales </p>
+    <!-- Tarjeta 03 -->
+    <div class="roadmap-card" onclick="toggleRoadmapCard(this)">
+      <div class="card-img-container">
+        <img src="Pic/EstilosyResponsiveDesignCSS3.jpg" alt="Estilos y Responsive Design">
       </div>
-    </details>
-
-    <details class="roadmap-card" name="roadmap">
-      <summary class="roadmap-summary">
-        <img src="Pic/FrameworksModernosFrontend.jpg" alt="Frameworks Frontend" class="roadmap-img">
-        <div class="roadmap-header">
-          <span class="step-num">08</span>
-          <h4> Frameworks Modernos de Frontend </h4>
-        </div>
-      </summary>
-      <div class="roadmap-body">
-        <p> Los frameworks modernos de frontend son herramientas que simplifican la creación de aplicaciones web modernas. 
-            En 2026, los frameworks más destacados incluyen React, Vue, Astro, Next.js y Svelte. Estos frameworks ofrecen 
-            diferentes enfoques, rendimientos y ecologías, y son ideales para proyectos de diversos tipos y requisitos técnicos.  </p>
+      <div class="card-body">
+        <span class="badge-num">03</span>
+        <h3 class="card-title">Estilos y Responsive Design (CSS3)</h3>
       </div>
-    </details>
-
-    <details class="roadmap-card" name="roadmap">
-      <summary class="roadmap-summary">
-        <img src="Pic/ProyectosIntegradoresPrácticos.jpg" alt="Proyectos Integradores" class="roadmap-img">
-        <div class="roadmap-header">
-          <span class="step-num">09</span>
-          <h4>Proyectos Integradores Prácticos</h4>
-        </div>
-      </summary>
-      <div class="roadmap-body">
-        <p> Construcción de aplicaciones aplicando arquitectura limpia. </p>
+      <div class="card-details">
+        <p>Aplica estilos visuales adaptables a cualquier dispositivo usando Flexbox, CSS Grid y Media Queries para garantizar una gran experiencia de usuario.</p>
       </div>
-    </details>
+    </div>
 
-    <details class="roadmap-card" name="roadmap">
-      <summary class="roadmap-summary">
-        <img src="Pic/DespliegueyPortafolioProfesional.jpg" alt="Despliegue y Portafolio" class="roadmap-img">
-        <div class="roadmap-header">
-          <span class="step-num">10</span>
-          <h4>Despliegue y Portafolio Profesional</h4>
-        </div>
-      </summary>
-      <div class="roadmap-body">
-        <p> Un portafolio profesional es más que un currículum: evidencia concreta de tu trabajo y capacidades mediante proyectos, 
-            casos, logros y resultados medibles. Permite a empleadores, clientes o colaboradores evaluar tu experiencia, estilo de 
-            trabajo y nivel de especialización. Puede presentarse en formato físico, digital o híbrido, dependiendo del contexto y 
-            la audiencia. </p>
+    <!-- Tarjeta 04 -->
+    <div class="roadmap-card" onclick="toggleRoadmapCard(this)">
+      <div class="card-img-container">
+        <img src="Pic/DinamismoInteractividad.jpg" alt="JavaScript">
       </div>
-    </details>
+      <div class="card-body">
+        <span class="badge-num">04</span>
+        <h3 class="card-title">Programación Funcional y DOM (JavaScript)</h3>
+      </div>
+      <div class="card-details">
+        <p>Agrega interactividad dinámica a la web manipulando el DOM, respondiendo a eventos y trabajando con peticiones asíncronas (APIs).</p>
+      </div>
+    </div>
 
+    <!-- Tarjeta 05 -->
+    <div class="roadmap-card" onclick="toggleRoadmapCard(this)">
+      <div class="card-img-container">
+        <img src="Pic/ControlVersiones.jpg" alt="Git y GitHub">
+      </div>
+      <div class="card-body">
+        <span class="badge-num">05</span>
+        <h3 class="card-title">Control de Versiones en Equipo (Git/GitHub)</h3>
+      </div>
+      <div class="card-details">
+        <p>Gestiona el historial de tu código, crea ramas de desarrollo y colabora de forma eficiente en equipos mediante repositorios remotos.</p>
+      </div>
+    </div>
+
+    <!-- Tarjeta 06 -->
+<div class="roadmap-card" onclick="toggleRoadmapCard(this)">
+  <div class="card-img-container">
+    <img src="Pic/BasesDatosSQLyNoSQL.jpeg" alt="Bases de Datos SQL y NoSQL">
   </div>
-</article>
+  <div class="card-body">
+    <span class="badge-num">06</span>
+    <h3 class="card-title">Bases de Datos (SQL / NoSQL)</h3>
+  </div>
+  <div class="card-details">
+    <p>Aprende a estructurar, almacenar y consultar grandes volúmenes de datos usando relaciones en SQL o modelos flexibles en NoSQL.</p>
+  </div>
+</div>
+
+<!-- Tarjeta 07 -->
+<div class="roadmap-card" onclick="toggleRoadmapCard(this)">
+  <div class="card-img-container">
+    <img src="Pic/DesarrolloServidoresBackend.jpg" alt="Desarrollo Backend">
+  </div>
+  <div class="card-body">
+    <span class="badge-num">07</span>
+    <h3 class="card-title">Desarrollo de Servidores (Backend)</h3>
+  </div>
+  <div class="card-details">
+    <p>Construye la lógica del negocio, APIs RESTful, seguridad, autenticación de usuarios y comunicación directa con bases de datos.</p>
+  </div>
+</div>
+
+<!-- Tarjeta 08 -->
+<div class="roadmap-card" onclick="toggleRoadmapCard(this)">
+  <div class="card-img-container">
+    <img src="Pic/FrameworksModernosFrontend.jpg" alt="Frameworks Frontend">
+  </div>
+  <div class="card-body">
+    <span class="badge-num">08</span>
+    <h3 class="card-title">Frameworks Modernos de Frontend</h3>
+  </div>
+  <div class="card-details">
+    <p>Optimiza la creación de aplicaciones web escalables con componentes reutilizables utilizando React, Vue, Svelte o Angular.</p>
+  </div>
+</div>
+
+<!-- Tarjeta 09 -->
+<div class="roadmap-card" onclick="toggleRoadmapCard(this)">
+  <div class="card-img-container">
+    <img src="Pic/ProyectosIntegradoresPrácticos.jpg" alt="Proyectos Integradores">
+  </div>
+  <div class="card-body">
+    <span class="badge-num">09</span>
+    <h3 class="card-title">Proyectos Integradores Prácticos</h3>
+  </div>
+  <div class="card-details">
+    <p>Aplica arquitecturas limpias y patrones de diseño combinando Frontend, Backend y Bases de Datos en proyectos reales.</p>
+  </div>
+</div>
+
+<!-- Tarjeta 10 -->
+        <div class="roadmap-card" onclick="toggleRoadmapCard(this)">
+          <div class="card-img-container">
+            <img src="Pic/DespliegueyPortafolioProfesional.jpg" alt="Despliegue y Portafolio">
+          </div>
+          <div class="card-body">
+            <span class="badge-num">10</span>
+            <h3 class="card-title">Despliegue y Portafolio Profesional</h3>
+          </div>
+          <div class="card-details">
+            <p>Publica tus aplicaciones en producción en la nube y construye un portafolio técnico.</p>
+          </div>
+        </div>
+
+      </div> <!-- CIERRA AQUÍ EL <div class="roadmap-grid"> -->
+    </article> <!-- CIERRA AQUÍ EL <article> DE LA HOJA DE RUTA -->
+
 
     <!-- ARTÍCULO 7: TENDENCIAS -->
 
