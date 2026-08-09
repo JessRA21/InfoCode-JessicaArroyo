@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevInsights - Sobre Nosotros</title>
+  <title>ArroyoCode - Sobre Nosotros</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- HEADER / NAVEGACIÓN PRINCIPAL -->
   <header>
     <nav>
       <div class="logo">
-        DevInsights <span class="logo-tag">DEV</span>
+        <span class="logo-icon">&lt;/&gt;</span> ArroyoCode
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
@@ -21,24 +23,68 @@
     </nav>
   </header>
 
-  <main>
-    <div class="content-box">
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main-wrapper">
+    
+    <!-- Hero Banner (Estilo idéntico a la captura) -->
+    <section class="hero-section">
+      <span class="badge">NUESTRA PLATAFORMA</span>
       <h1>Sobre Nuestro Blog Informativo</h1>
-      <p>DevInsights nace con el propósito de ofrecer explicaciones claras, objetivas y estructuradas sobre el mundo de la informática, la ciencia de datos y la ingeniería de software.</p>
-      
-      <h2>¿Qué temas exploramos?</h2>
-      <p>Explicamos los fundamentos del desarrollo tecnológico: diferencias entre paradigmas de programación, bases de datos relacionales y no relacionales, consumo de APIs REST, y el uso de herramientas esenciales como Git y GitHub.</p>
+      <p class="hero-text">
+        ArroyoCode nace con el propósito de ofrecer explicaciones claras, objetivas y estructuradas sobre el mundo de la informática, la ciencia de datos y la ingeniería de software.
+      </p>
+    </section>
 
-      <h2>¿A quién va dirigido?</h2>
-      <p>A estudiantes, principiantes y entusiastas de la tecnología que buscan comprender las bases del desarrollo web y la programación antes de sumergirse en proyectos avanzados.</p>
-    </div>
+    <!-- Grid de Secciones Informativas -->
+    <section class="cards-grid">
+      
+      <article class="info-card">
+        <div class="card-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h7"></path></svg>
+        </div>
+        <h2>¿Qué temas exploramos?</h2>
+        <p class="card-intro">
+          Explicamos los fundamentos del desarrollo tecnológico para fortalecer las bases teórico-prácticas esenciales:
+        </p>
+        <ul class="feature-list">
+          <li><strong>Paradigmas de Programación:</strong> POO, Funcional e Imperativa.</li>
+          <li><strong>Bases de Datos:</strong> Modelos relacionales (SQL) y no relacionales (NoSQL).</li>
+          <li><strong>Arquitectura Web:</strong> Consumo e integración eficiente de APIs REST.</li>
+          <li><strong>Control de Versiones:</strong> Herramientas esenciales como Git y GitHub.</li>
+        </ul>
+      </article>
+
+      <article class="info-card">
+        <div class="card-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 0 0-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 0 1 5.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 0 1 9.288 0M15 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6 3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM7 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"></path></svg>
+        </div>
+        <h2>¿A quién va dirigido?</h2>
+        <p class="card-intro">
+          Nuestro contenido está optimizado para acompañar en su ruta de crecimiento profesional a:
+        </p>
+        <ul class="feature-list">
+          <li><strong>Estudiantes:</strong> Que buscan reforzar los conceptos teóricos de su formación académica.</li>
+          <li><strong>Principiantes:</strong> Que inician sus primeros pasos en la lógica de programación.</li>
+          <li><strong>Entusiastas Tech:</strong> Que desean comprender las bases del desarrollo web antes de construir proyectos avanzados.</li>
+        </ul>
+      </article>
+
+    </section>
+
   </main>
 
-  <footer>
-    <div class="footer-container">
-      <p><strong>Proyecto:</strong> The Blog Site (DevInsights)</p>
-      <p><strong>Autores:</strong> Jessica Angeles Reséndiz Arroyo & Equipo de Desarrollo</p>
-      <p><strong>Contacto:</strong> contacto.falso@ejemplo.com</p>
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer-site">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p class="footer-title">ArroyoCode</p>
+        <p><strong>Proyecto:</strong> The Blog Site</p>
+        <p><strong>Autores:</strong> Jessica Angeles Reséndiz Arroyo & Equipo de Desarrollo</p>
+        <p><strong>Contacto:</strong> contacto.falso@ejemplo.com</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ArroyoCode. Todos los derechos reservados.</p>
+      </div>
     </div>
   </footer>
 

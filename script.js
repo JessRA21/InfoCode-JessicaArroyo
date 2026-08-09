@@ -1,4 +1,3 @@
-// Función para alternar el giro 3D de las tarjetas de clasificación
 function toggleFlip(button) {
   const flipCard = button.closest('.flip-card');
   flipCard.classList.toggle('is-flipped');
@@ -24,7 +23,14 @@ window.onclick = function(event) {
   }
 };
 
-// Alterna el detalle de las tarjetas de la hoja de ruta al hacer clic
-function toggleRoadmapCard(card) {
-  card.classList.toggle('open');
+function toggleRoadmapCard(element) {
+  const targetCard = element.closest('.roadmap-card');
+
+  document.querySelectorAll('.roadmap-card').forEach(card => {
+    if (card !== targetCard) {
+      card.classList.remove('open');
+    }
+  });
+
+  targetCard.classList.toggle('open');
 }
